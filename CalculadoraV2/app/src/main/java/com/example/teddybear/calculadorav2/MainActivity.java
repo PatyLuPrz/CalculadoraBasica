@@ -73,4 +73,17 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("Multiplicacion error: \n"+e.getMessage());
         }
     }
+
+    public void moduloOnclick(View view){
+        try{
+            float N1 = Float.parseFloat(numero1.getText().toString());
+            float N2 = Float.parseFloat(numero2.getText().toString());
+            float R = N1%N2;
+            System.out.println("Resultado: "+R);
+            String result = "Resultado: "+R;
+            resultado.setText(result);
+        }catch (Exception e){
+            System.out.println("Modulo error: \n"+e.getMessage());
+        }
+    }
 }
